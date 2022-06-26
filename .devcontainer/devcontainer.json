@@ -1,0 +1,13 @@
+{
+	"name": "backend-go-url-responsor",
+	"dockerComposeFile": [
+		"../docker-compose.yml"
+	],
+	"service": "url-responsor",
+	"workspaceFolder": "/go/src",
+	"settings": {},
+	"extensions": [
+		"golang.go",
+		"graphql.vscode-graphql"
+	]
+}

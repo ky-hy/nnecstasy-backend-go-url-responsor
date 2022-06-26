@@ -1,0 +1,18 @@
+version: "3"
+services:
+  url-responsor-dev:
+    build:
+      context: .
+      target: builder
+    volumes:
+      - ./:/go/src
+    tty: true
+    ports:
+      - 8082:8080
+    entrypoint: sleep 86400
+  url-responsor-prod:
+    build:
+      context: .
+    tty: true
+    ports:
+      - 8083:8080
